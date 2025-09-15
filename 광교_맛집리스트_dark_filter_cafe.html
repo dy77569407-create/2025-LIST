@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>광교 주변 맛집 리스트</title>
+<style>
+body { font-family: Arial,'Noto Sans KR',sans-serif; background:#121212; color:#eaeaea; margin:0; padding:20px; }
+.container { max-width:960px; margin:0 auto; }
+h1 { text-align:center; font-size:1.8em; margin-bottom:16px; color:#90caf9; }
+.filters { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin-bottom:16px; }
+.chip { padding:8px 14px; border-radius:20px; border:1px solid #333; cursor:pointer; font-size:14px; }
+.chip.active { background:#1976d2; color:#fff; }
+.searchbar { text-align:center; margin-bottom:16px; }
+.searchbar input { width:90%; max-width:400px; padding:10px; border-radius:8px; border:1px solid #333; background:#1e1e1e; color:#fff; }
+.card { background:#1e1e1e; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.5); padding:16px; margin-bottom:16px; }
+.name { font-size:18px; font-weight:bold; margin-bottom:6px; color:#ffffff; }
+.addr, .type, .menu, .point { margin:4px 0; font-size:14px; }
+.links { margin-top:8px; }
+.links a { display:inline-block; margin-right:8px; padding:8px 12px; border-radius:8px; background:#1976d2; color:#fff; text-decoration:none; font-size:14px; }
+.links a:hover { background:#0d47a1; }
+footer { text-align:right; margin-top:20px; font-size:12px; color:#aaa; }
+@media (max-width:600px) {
+  body { padding:10px; }
+  .card { padding:12px; }
+  .name { font-size:16px; }
+}
+</style>
+</head><body>
+<div class="container">
+<h1>🌙 광교 주변 맛집 리스트 🌙</h1>
+<div class="filters">
+<div class="chip active" data-type="ALL">전체</div><div class="chip" data-type="간단식사">간단식사</div><div class="chip" data-type="쌀국수">쌀국수</div><div class="chip" data-type="일식">일식</div><div class="chip" data-type="중식">중식</div><div class="chip" data-type="카페">카페</div><div class="chip" data-type="한식">한식</div><div class="chip" data-type="햄버거">햄버거</div></div>
+<div class="searchbar">
+<input id="searchInput" placeholder="검색어를 입력하세요 (상호/메뉴/포인트)" aria-label="검색">
+</div>
+<div id="list">
+<div class="card" data-type="햄버거" data-search="파이브가이즈 경기 수원시 영통구 광교중앙로 124 (하동 1017-2) 햄버거 🍔 버거는 취향대로, 감튀는 파이브가이즈 스타일 & 리틀 사이즈 경기도에서 유일한 파이브가이즈! 감튀에 욕심내시지 마세요..!(큰코다쳐요ㅋ)">
+<div class="name">파이브가이즈</div>
+<div class="addr">📍 경기 수원시 영통구 광교중앙로 124 (하동 1017-2)</div>
+<div class="type">🍽 햄버거</div>
+<div class="menu">🥢 🍔 버거는 취향대로, 감튀는 파이브가이즈 스타일 & 리틀 사이즈</div>
+<div class="point">✨ 경기도에서 유일한 파이브가이즈! 감튀에 욕심내시지 마세요..!(큰코다쳐요ㅋ)</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%ED%8C%8C%EC%9D%B4%EB%B8%8C%EA%B0%80%EC%9D%B4%EC%A6%88%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EA%B4%91%EA%B5%90%EC%A4%91%EC%95%99%EB%A1%9C%20124%20%28%ED%95%98%EB%8F%99%201017-2%29" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%ED%8C%8C%EC%9D%B4%EB%B8%8C%EA%B0%80%EC%9D%B4%EC%A6%88%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EA%B4%91%EA%B5%90%EC%A4%91%EC%95%99%EB%A1%9C%20124%20%28%ED%95%98%EB%8F%99%201017-2%29" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="쌀국수" data-search="땀땀 경기 수원시 영통구 광교중앙로 124 (하동 1017-2) 쌀국수 🍜 매운소곱창 쌀국수, 직화 소고기 쌀국수 강추 체인점이 많은 땀땀 중에서도 맛있는 편!! 가능하시다면 등갈비튀김도 함께~">
+<div class="name">땀땀</div>
+<div class="addr">📍 경기 수원시 영통구 광교중앙로 124 (하동 1017-2)</div>
+<div class="type">🍽 쌀국수</div>
+<div class="menu">🥢 🍜 매운소곱창 쌀국수, 직화 소고기 쌀국수 강추</div>
+<div class="point">✨ 체인점이 많은 땀땀 중에서도 맛있는 편!! 가능하시다면 등갈비튀김도 함께~</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EB%95%80%EB%95%80%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EA%B4%91%EA%B5%90%EC%A4%91%EC%95%99%EB%A1%9C%20124%20%28%ED%95%98%EB%8F%99%201017-2%29" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EB%95%80%EB%95%80%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EA%B4%91%EA%B5%90%EC%A4%91%EC%95%99%EB%A1%9C%20124%20%28%ED%95%98%EB%8F%99%201017-2%29" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="일식" data-search="우애돈카츠 경기 수원시 영통구 도청로18번길 26 (이의동 1336) 일식 🍱 전부! 하지만 상등심, 로스, 안심 추천 :) 찾기 힘들지만 그만큼 맛있는 가성비 돈까스집(안계윤 주무관님 추천)">
+<div class="name">우애돈카츠</div>
+<div class="addr">📍 경기 수원시 영통구 도청로18번길 26 (이의동 1336)</div>
+<div class="type">🍽 일식</div>
+<div class="menu">🥢 🍱 전부! 하지만 상등심, 로스, 안심 추천 :)</div>
+<div class="point">✨ 찾기 힘들지만 그만큼 맛있는 가성비 돈까스집(안계윤 주무관님 추천)</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EC%9A%B0%EC%95%A0%EB%8F%88%EC%B9%B4%EC%B8%A0%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%8F%84%EC%B2%AD%EB%A1%9C18%EB%B2%88%EA%B8%B8%2026%20%28%EC%9D%B4%EC%9D%98%EB%8F%99%201336%29" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EC%9A%B0%EC%95%A0%EB%8F%88%EC%B9%B4%EC%B8%A0%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%8F%84%EC%B2%AD%EB%A1%9C18%EB%B2%88%EA%B8%B8%2026%20%28%EC%9D%B4%EC%9D%98%EB%8F%99%201336%29" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="한식" data-search="명백집 경기 수원시 영통구 도청로18번길 26 (이의동 1336) 한식 🍲 흑돼지곰탕 단일메뉴 속 편하고 든든한 맑은 돼지국밥, 청아한 맛! 자극파는 피해주세요">
+<div class="name">명백집</div>
+<div class="addr">📍 경기 수원시 영통구 도청로18번길 26 (이의동 1336)</div>
+<div class="type">🍽 한식</div>
+<div class="menu">🥢 🍲 흑돼지곰탕 단일메뉴</div>
+<div class="point">✨ 속 편하고 든든한 맑은 돼지국밥, 청아한 맛! 자극파는 피해주세요</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EB%AA%85%EB%B0%B1%EC%A7%91%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%8F%84%EC%B2%AD%EB%A1%9C18%EB%B2%88%EA%B8%B8%2026%20%28%EC%9D%B4%EC%9D%98%EB%8F%99%201336%29" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EB%AA%85%EB%B0%B1%EC%A7%91%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%8F%84%EC%B2%AD%EB%A1%9C18%EB%B2%88%EA%B8%B8%2026%20%28%EC%9D%B4%EC%9D%98%EB%8F%99%201336%29" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="간단식사" data-search="베이글멘션 경기 수원시 영통구 도청로18번길 26 (이의동 1336) 간단식사 🥯 하몽루꼴라, 솔티초코, 고메버터 코코넛침&카야잼 런던베이글을 뛰어넘을 맛집(작성자 기준) 사서 광교 호수공원 또는 스타벅스SK뷰레이크점에서 먹는 것 추천👍">
+<div class="name">베이글멘션</div>
+<div class="addr">📍 경기 수원시 영통구 도청로18번길 26 (이의동 1336)</div>
+<div class="type">🍽 간단식사</div>
+<div class="menu">🥢 🥯 하몽루꼴라, 솔티초코, 고메버터 코코넛침&카야잼</div>
+<div class="point">✨ 런던베이글을 뛰어넘을 맛집(작성자 기준) 사서 광교 호수공원 또는 스타벅스SK뷰레이크점에서 먹는 것 추천👍</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EB%B2%A0%EC%9D%B4%EA%B8%80%EB%A9%98%EC%85%98%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%8F%84%EC%B2%AD%EB%A1%9C18%EB%B2%88%EA%B8%B8%2026%20%28%EC%9D%B4%EC%9D%98%EB%8F%99%201336%29" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EB%B2%A0%EC%9D%B4%EA%B8%80%EB%A9%98%EC%85%98%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%EB%8F%84%EC%B2%AD%EB%A1%9C18%EB%B2%88%EA%B8%B8%2026%20%28%EC%9D%B4%EC%9D%98%EB%8F%99%201336%29" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="간단식사" data-search="이오김밥 광교 호수점 경기 수원시 영통구 하동 1016-1 간단식사 🍙 마늘쫑김밥(쌈뽕한 맛😘), 연어김밥 특별한 김밥이 있는 곳 :) 포장 후 광교 호수공원 뷰 보면서 먹는 것 추천👍">
+<div class="name">이오김밥 광교 호수점</div>
+<div class="addr">📍 경기 수원시 영통구 하동 1016-1</div>
+<div class="type">🍽 간단식사</div>
+<div class="menu">🥢 🍙 마늘쫑김밥(쌈뽕한 맛😘), 연어김밥</div>
+<div class="point">✨ 특별한 김밥이 있는 곳 :) 포장 후 광교 호수공원 뷰 보면서 먹는 것 추천👍</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EC%9D%B4%EC%98%A4%EA%B9%80%EB%B0%A5%20%EA%B4%91%EA%B5%90%20%ED%98%B8%EC%88%98%EC%A0%90%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016-1" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EC%9D%B4%EC%98%A4%EA%B9%80%EB%B0%A5%20%EA%B4%91%EA%B5%90%20%ED%98%B8%EC%88%98%EC%A0%90%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016-1" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="일식" data-search="오늘의회전초밥 경기 수원시 영통구 하동 1016 일식 🍣 묵은지광어초밥이 특히 맛있어요 흑백쉐프 출연 쉐프가 운영하는 초밥집, 웨이팅은 캐치테이블로 확인후 방문하세요">
+<div class="name">오늘의회전초밥</div>
+<div class="addr">📍 경기 수원시 영통구 하동 1016</div>
+<div class="type">🍽 일식</div>
+<div class="menu">🥢 🍣 묵은지광어초밥이 특히 맛있어요</div>
+<div class="point">✨ 흑백쉐프 출연 쉐프가 운영하는 초밥집, 웨이팅은 캐치테이블로 확인후 방문하세요</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EC%98%A4%EB%8A%98%EC%9D%98%ED%9A%8C%EC%A0%84%EC%B4%88%EB%B0%A5%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EC%98%A4%EB%8A%98%EC%9D%98%ED%9A%8C%EC%A0%84%EC%B4%88%EB%B0%A5%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="중식" data-search="티엔바오 경기 수원시 영통구 하동 1016 중식 🥟 중식냉면, 가지딤섬, 하가우 중식 냉면과 딤섬이 인기 최고! 회전률이 낮으므로 웨이팅 시작된다면 과감히 포기!">
+<div class="name">티엔바오</div>
+<div class="addr">📍 경기 수원시 영통구 하동 1016</div>
+<div class="type">🍽 중식</div>
+<div class="menu">🥢 🥟 중식냉면, 가지딤섬, 하가우</div>
+<div class="point">✨ 중식 냉면과 딤섬이 인기 최고! 회전률이 낮으므로 웨이팅 시작된다면 과감히 포기!</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%ED%8B%B0%EC%97%94%EB%B0%94%EC%98%A4%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%ED%8B%B0%EC%97%94%EB%B0%94%EC%98%A4%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="카페" data-search="스타벅스 (광교 SK뷰레이크점) 경기 수원시 영통구 하동 1016-1 카페 ☕ 뷰 자체가 맛집입니다 ㅎ_ㅎ 한국에서 가장 높은 스타벅스로 유명, 간단 샌드위치 사서 가는 것 추천!">
+<div class="name">스타벅스 (광교 SK뷰레이크점)</div>
+<div class="addr">📍 경기 수원시 영통구 하동 1016-1</div>
+<div class="type">🍽 카페</div>
+<div class="menu">🥢 ☕ 뷰 자체가 맛집입니다 ㅎ_ㅎ</div>
+<div class="point">✨ 한국에서 가장 높은 스타벅스로 유명, 간단 샌드위치 사서 가는 것 추천!</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%28%EA%B4%91%EA%B5%90%20SK%EB%B7%B0%EB%A0%88%EC%9D%B4%ED%81%AC%EC%A0%90%29%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016-1" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EC%8A%A4%ED%83%80%EB%B2%85%EC%8A%A4%20%28%EA%B4%91%EA%B5%90%20SK%EB%B7%B0%EB%A0%88%EC%9D%B4%ED%81%AC%EC%A0%90%29%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201016-1" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="한식" data-search="선비칼국수 경기 수원시 영통구 하동 1015 한식 🥘 들깨칼국수, 바지락칼국수 도청 근무하며 칼국수 먹어야겠다 하면 생각나는 집">
+<div class="name">선비칼국수</div>
+<div class="addr">📍 경기 수원시 영통구 하동 1015</div>
+<div class="type">🍽 한식</div>
+<div class="menu">🥢 🥘 들깨칼국수, 바지락칼국수</div>
+<div class="point">✨ 도청 근무하며 칼국수 먹어야겠다 하면 생각나는 집</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EC%84%A0%EB%B9%84%EC%B9%BC%EA%B5%AD%EC%88%98%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201015" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EC%84%A0%EB%B9%84%EC%B9%BC%EA%B5%AD%EC%88%98%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201015" target="_blank">카카오맵</a>
+</div>
+</div><div class="card" data-type="카페" data-search="커스텀 커피 경기 수원시 영통구 하동 1015 카페 🥤 카페라떼(강추), 피스타치오라떼 라떼 좀 좋아하신다 하는 분들은 알만한 커피집!!">
+<div class="name">커스텀 커피</div>
+<div class="addr">📍 경기 수원시 영통구 하동 1015</div>
+<div class="type">🍽 카페</div>
+<div class="menu">🥢 🥤 카페라떼(강추), 피스타치오라떼</div>
+<div class="point">✨ 라떼 좀 좋아하신다 하는 분들은 알만한 커피집!!</div>
+<div class="links">
+  <a href="https://map.naver.com/v5/search/%EC%BB%A4%EC%8A%A4%ED%85%80%20%EC%BB%A4%ED%94%BC%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201015" target="_blank">네이버 지도</a>
+  <a href="https://map.kakao.com/?q=%EC%BB%A4%EC%8A%A4%ED%85%80%20%EC%BB%A4%ED%94%BC%20%EA%B2%BD%EA%B8%B0%20%EC%88%98%EC%9B%90%EC%8B%9C%20%EC%98%81%ED%86%B5%EA%B5%AC%20%ED%95%98%EB%8F%99%201015" target="_blank">카카오맵</a>
+</div>
+</div></div>
+<footer>생성일시: 2025-09-15 12:14:02 KST</footer>
+</div>
+<script>
+const chips = document.querySelectorAll('.chip');
+const cards = document.querySelectorAll('.card');
+const searchInput = document.getElementById('searchInput');
+
+function applyFilters() {
+  const activeChip = document.querySelector('.chip.active');
+  const type = activeChip ? activeChip.dataset.type : 'ALL';
+  const q = (searchInput.value || '').toLowerCase().trim();
+  cards.forEach(c => {
+    const matchType = (type === 'ALL') || (c.dataset.type === type);
+    const matchText = c.dataset.search.toLowerCase().includes(q);
+    c.style.display = (matchType && matchText) ? '' : 'none';
+  });
+}
+
+chips.forEach(ch => {
+  ch.addEventListener('click', () => {
+    chips.forEach(x => x.classList.remove('active'));
+    ch.classList.add('active');
+    applyFilters();
+  });
+});
+
+searchInput.addEventListener('input', applyFilters);
+</script>
+</body></html>
